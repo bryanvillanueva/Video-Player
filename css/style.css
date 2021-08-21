@@ -1,13 +1,16 @@
 @import './buttons.css';
 
 body {
-	background-color: #26B4BC;
+	background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .wraper {
 	max-inline-size: 900px;
 	margin: auto;
+	margin-top: 5%;
 }
 
 .player video{ 
@@ -57,4 +60,12 @@ body {
 
 .PlayerRango input {
 	flex: 1;
+}
+
+#Rango {
+	-webkit-appearance: none;
+	background-color: red;
+	height: 3px;
+	display: block;
+
 }
