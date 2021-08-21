@@ -1,0 +1,60 @@
+@import './buttons.css';
+
+body {
+	background-color: #26B4BC;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wraper {
+	max-inline-size: 900px;
+	margin: auto;
+}
+
+.player video{ 
+ inline-size: 100%;
+ aspect-ratio: 16 / 9;  
+}
+
+.player {
+	position: relative;
+}
+
+.controls {
+	visibility: hidden;
+	transition: .3s hidden;
+	transition:visibility 1000ms;
+}
+
+.player:hover .controls {
+  visibility: visible;
+}
+
+.playerActions {
+  position: absolute;
+  inset: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  gap: 20px;
+  }
+
+.playerTittle {
+	color: white;
+	position: absolute;
+	inset-block-start: 3%;
+	inset-inline-start: 2%;
+}
+
+.PlayerRango {
+	position: absolute;
+	inset-block-end: 0;
+	inset-inline:  0;
+	padding: 8px;
+	display: flex;
+	z-index: 3;
+}
+
+.PlayerRango input {
+	flex: 1;
+}

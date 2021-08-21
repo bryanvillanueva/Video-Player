@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link  rel="icon"   href="https://images.vexels.com/media/users/3/137413/isolated/lists/4acb8e52632aa9b7c874b878eaf02bc4-logotipo-del-icono-de-spotify.png" type="image/png" />
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Video Player</title>
+</head>
+<body>
+   
+   <div class="wraper">
+   	  <div class="player">
+   	  	<h2 class="playerTittle controls">Bad Bunny - Yonaguni</h2>
+   	  	<div class="playerActions controls">
+   	  	<button class="button" id="Back" aria-label="Atrasar 10 segundos la canción" title="Atrasar 10 segundos la canción"></button>
+        <button class="button" id="play" aria-label="Reproducir la canción" title="Reproducir la canción"></button>
+        <button class="button" hidden id="pause" aria-label="Pausar la canción" title="Pausar la canción"></button>
+        <button class="button" id="Up" aria-label="Adelantar 10 segundos la canción" title="Adelantar 10 segundos la canción"></button>
+   	  	</div>
+   	  	<div class="PlayerRango controls"><input id="Rango" type="range" min="0" step="1" value="0"></div>
+        
+        <video id="video" poster="./images/poster-final.png" src="./videos/bad.mp4" width="900px" aria-label="Cuadro de vido"></video>
+     </div>
+   </div> 
+ 
+
+<script src="./js/index.js"></script>
+</body>
+</html>
